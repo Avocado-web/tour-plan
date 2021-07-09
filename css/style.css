@@ -409,11 +409,14 @@ template {
 }
 
 .navbar-menu {
-  padding: 31px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
+}
+
+.navbar-menu__block {
+  padding: 31px 0;
 }
 
 .navbar-menu__link {
@@ -594,7 +597,7 @@ template {
   .navbar__search {
     margin-left: auto;
   }
-  .navbar-menu {
+  .navbar-menu__block {
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -618,7 +621,7 @@ template {
   .navbar__search {
     margin-left: auto;
   }
-  .navbar-menu {
+  .navbar-menu__block {
     padding-top: 22px;
     padding-bottom: 22px;
   }
