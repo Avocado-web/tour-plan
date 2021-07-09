@@ -535,6 +535,7 @@ template {
 
 .stars {
   flex-basis: 100%;
+  margin-right: 16px;
 }
 
 .offer {
