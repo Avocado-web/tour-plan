@@ -1,26 +1,36 @@
 @media (max-width: 1920px)
   .container
     max-width: 1320px
+  .hotel
+    &-info
+      &__small-screen
+        display: none
 @media (max-width: 1440px)
   .container
     max-width: 1110px
+  .hotel
+    &-info
+      &__small-screen
+        display: none
 @media (max-width: 1200px)
   .container
     max-width: 960px
   .navbar
     &-top
-      &__block
-        padding-top: 30px
-        padding-bottom: 30px
+      padding-top: 30px
+      padding-bottom: 30px
     &__search
       margin-left: auto
     &-menu
-      &__block
-        padding-top: 22px
-        padding-bottom: 22px
+      padding-top: 22px
+      padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
+  .hotel
+    &-info
+      &__small-screen
+        display: none
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -28,15 +38,13 @@
     width: 132px
   .navbar
     &-top
-      &__block
-        padding-top: 30px
-        padding-bottom: 30px
+      padding-top: 30px
+      padding-bottom: 30px
     &__search
       margin-left: auto
+      margin-right: 73px
     &-menu
-      &__block
-        padding-top: 22px
-        padding-bottom: 22px
+      padding: 20px 13px 22px 14px
       &__link
         font-size: 12px
         line-height: 15px
@@ -44,15 +52,40 @@
   .search
     &__input
       width: 340px
+    &__button
+      width: 65px
+  .user
+    &__name
+      margin-top: 5px
+  .breadcrumb
+    &-list
+      padding: 18px 0 18px 0
+  .hotel
+    &-info
+      &__name   
+        margin-top: 5px
+        margin-bottom: 0px
+      &__offer
+        margin-left: 14px
+        margin-top: 6px
+      &__rating
+        margin-top: 3px
+        max-width: 65px
+  .stars
+    &-container
+      margin-left: 1px
+  .hotel
+    &-info
+      &__small-screen
+        display: none
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
   .navbar
     &-top
-      &__block
-        padding-top: 30px
-        padding-bottom: 30px
+      padding-top: 30px
+      padding-bottom: 30px
     &__search, &-menu, &__user
       display: none
   .menu
@@ -68,6 +101,9 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .breadcrumb
+    &-list
+      padding: 22px 0 18px 0
   .stars
     flex-basis: auto
   .hotel
@@ -88,13 +124,23 @@
       &__offer
         order: -1
         margin-top: 0
-        margin-left: 0
+        margin-left: 1px
+      &__description
+        display: none
+      &__small-screen
+        display: block
 @media (max-width: 320px)
   .container
     max-width: 280px
   .logo
     width: 99px
     height: 13px
+  .hotel
+    &-info
+      &__description
+        display: none
+      &__small-screen
+        display: block
     
   
   
