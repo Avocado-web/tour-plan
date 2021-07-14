@@ -34,6 +34,7 @@
     &-slider
       width: 580px
       &__image
+        width: 100%
         height: 100%
         object-fit: cover
 @media (max-width: 992px)
@@ -129,6 +130,11 @@
     &-container
       margin-right: -1px
   .hotel
+    &-rigth
+      flex-direction: column
+      min-height: 450px
+    &-slider
+      height: 350px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -155,6 +161,10 @@
       &__small-screen
         display: block
         margin-left: 1px
+  .booking
+    width: 100%
+  .map
+    width: 100%
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -162,11 +172,31 @@
     width: 99px
     height: 13px
   .hotel
+    &__slider
+      margin-bottom: 20px
+    &-rigth
+      min-height: 402px
     &-info
+      padding-bottom: 0
       &__description
         display: none
       &__small-screen
         display: block
+    &-slider
+      max-width: 278px
+      min-height: 179px
+    // &-rigth
+    //   min-height: 402px
+    &-grid
+      max-height: 601px
+      padding-top: 18px
+  .booking
+    width: 279px
+    height: 210px
+  .map
+    width: 280px
+    height: 172px
+
     
   
   
