@@ -38,7 +38,8 @@
         height: 100%
         object-fit: cover
 @media (max-width: 992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -95,7 +96,8 @@
   .map
     width: 340px
 @media (max-width: 767px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 576px
     width: 92%
   .logo
@@ -165,8 +167,24 @@
     width: 100%
   .map
     width: 100%
+  .newsletter
+    padding: 76px 0 83px 0
+    &-wrapper
+      flex-direction: column
+      align-items: flex-start
+    &__title
+      margin-bottom: 37px
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+  .subscribe
+    width: 100%
 @media (max-width: 320px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 280px
   .logo
     width: 99px
@@ -196,6 +214,9 @@
   .map
     width: 280px
     height: 172px
+  .subscribe
+    width: 280px
+  
 
     
   
