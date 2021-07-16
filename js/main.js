@@ -43,3 +43,7 @@ ymaps.ready(init);
 
       myMap.geoObjects.add(myPlacemark);
     }
+
+    $('.parallax-window').parallax({
+  speed: 0.5,
+});
