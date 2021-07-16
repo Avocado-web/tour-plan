@@ -13,27 +13,8 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&load=package.standard&lang=en-US"
-    type="text/javascript"></script>
-  <script type="text/javascript">
-    ymaps.ready(init);
-    var myMap,
-      myPlacemark;
-
-    function init() {
-      myMap = new ymaps.Map("myMap", {
-        center: [33.69, -78.92],
-        zoom: 7
-      });
-
-      myPlacemark = new ymaps.Placemark([33.69, -78.92], {
-        hintContent: 'Grand Hilton Hotel',
-        balloonContent: 'Hotel'
-      });
-
-      myMap.geoObjects.add(myPlacemark);
-    }
-  </script>
+  <script
+    src="https://api-maps.yandex.ru/2.0-stable/?apikey=0d4ea044-fe4a-404e-8d55-62d7ee16a0da&load=package.standard&lang=en-US"></script>
 </head>
 
 <body>

@@ -24,3 +24,22 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     enabled: true,
   },
 });
+
+ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+
+    function init() {
+      myMap = new ymaps.Map("myMap", {
+        center: [33.69, -78.92],
+        zoom: 7
+      });
+
+      myPlacemark = new ymaps.Placemark([33.69, -78.92], {
+        hintContent: 'Grand Hilton Hotel',
+        balloonContent: 'Hotel'
+      });
+      myMap.setType('yandex#hybrid')
+
+      myMap.geoObjects.add(myPlacemark);
+    }
