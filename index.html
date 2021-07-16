@@ -13,6 +13,27 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&load=package.standard&lang=en-US"
+    type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+
+    function init() {
+      myMap = new ymaps.Map("myMap", {
+        center: [33.69, -78.92],
+        zoom: 7
+      });
+
+      myPlacemark = new ymaps.Placemark([33.69, -78.92], {
+        hintContent: 'Grand Hilton Hotel',
+        balloonContent: 'Hotel'
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
 </head>
 
 <body>
@@ -177,10 +198,7 @@
             <button class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map">
-            <iframe class="map-style"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.095697800351!2d-115.16308798524022!3d36.13988311228956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4390e8c2ddf%3A0xf3a66dec07770c1b!2z0KXQuNC70YLQvtC9INCT0YDQsNC90LQg0JLQsNC60LXQudGI0LXQvdGBINC-0L0g0JvQsNGBINCS0LXQs9Cw0YEg0KHRgtGA0creLjQvw!5e0!3m2!1sru!2s!4v1626205768491!5m2!1sru!2s"></iframe>
-          </div>
+          <div id="myMap" class="map"></div>
           <!-- /.map -->
         </div>
         <!-- /.hotel-rigth -->
