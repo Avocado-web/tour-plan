@@ -1,17 +1,9 @@
 @media (max-width: 1920px)
   .container
     max-width: 1320px
-  .hotel
-    &-info
-      &__small-screen
-        display: none
 @media (max-width: 1440px)
   .container
     max-width: 1110px
-  .hotel
-    &-info
-      &__small-screen
-        display: none
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -28,15 +20,15 @@
         font-size: 12px
         line-height: 15px
   .hotel
-    &-info
-      &__small-screen
-        display: none
     &-slider
       width: 580px
       &__image
         width: 100%
         height: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -46,7 +38,7 @@
   .navbar
     &-top
       padding-top: 30px
-      padding-bottom: 30px
+      padding-bottom: 31px
     &__search
       margin-left: auto
       margin-right: 73px
@@ -66,11 +58,12 @@
       margin-top: 5px
   .breadcrumb
     &-list
-      padding: 18px 0 18px 0
+      padding: 19px 0 18px 0
   .hotel
+    margin-bottom: 56px
     &-info
-      &__small-screen
-        display: none
+      &__text
+        padding-top: 24px
       &__name   
         margin-top: 5px
         margin-bottom: 0px
@@ -78,7 +71,6 @@
         margin-left: 14px
         margin-top: 6px
       &__rating
-        margin-top: 3px
         max-width: 65px
     &__slider
       margin-bottom: 30px
@@ -93,12 +85,47 @@
       margin-left: 1px
   .booking
     width: 340px
+    max-height: 210px
+    padding: 28px 22px 28px 23px
+    &__per-room
+      margin-top: -4px
+    &__info
+      margin-bottom: 9px
+    &__call-center
+      margin-bottom: 17px
   .map
     width: 340px
+  .newsletter
+    &-wrapper
+      top: -6px
   .reviews
+    &__title
+      margin-bottom: 50px
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
     &-slider
       &__item
         max-width: 579px
+      &__button
+        top: 50%
+        &--next
+          right: 0
+        &--prev
+          left: 0
+  .activities
+    padding: 52px 0 98px 0
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    padding: 24px 107px 24px 26px
+    width: 340px
+    height: 255px
 @media (max-width: 767px)
   .container,
   .newsletter-wrapper
@@ -162,11 +189,6 @@
         margin-top: 0
         margin-left: 2px
         padding: 3px 8px 4px 9px
-      &__description
-        display: none
-      &__small-screen
-        display: block
-        margin-left: 1px
   .booking
     width: 100%
   .map
@@ -215,6 +237,15 @@
       &__text
           text-align: unset
           min-width: 217px
+  .activities
+    &-wrapper
+      justify-content: center
+    &__title
+      font-size: 18px
+      line-height: 23px
+  .card
+    width: 340px
+    height: 255px
 @media (max-width: 320px)
   .container,
   .newsletter-wrapper
@@ -223,21 +254,16 @@
     width: 99px
     height: 13px
   .hotel
+    margin-bottom: 60px
     &__slider
       margin-bottom: 20px
     &-rigth
       min-height: 402px
     &-info
       padding-bottom: 0
-      &__description
-        display: none
-      &__small-screen
-        display: block
     &-slider
       max-width: 278px
       min-height: 179px
-    // &-rigth
-    //   min-height: 402px
     &-grid
       max-height: 601px
       padding-top: 18px
@@ -247,8 +273,41 @@
   .map
     width: 280px
     height: 172px
+  .newsletter
+    &-wrapper
+      top: 0
+    &-title
+      &__strong
+        margin-top: 5px
   .subscribe
     width: 280px
+    &__input
+      padding-left: 20px
+  .reviews
+    &-slider
+      &__item
+        max-width: 100%
+      &__text
+        font-family: 'Mulish'
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+      &__button
+        &--prev
+          margin-left: -91px
+        &--next
+          margin-right: -89px
+  .activities
+    padding: 26px 0 98px 0
+    &__title
+      margin-bottom: 37px
+    &__card
+      margin-bottom: 23px
+  .card
+    padding: 24px 47px 24px 26px
+    width: 280px
+    height: 255px
   
 
     
