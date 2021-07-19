@@ -1056,6 +1056,151 @@ template {
   border-radius: 4px;
 }
 
+.other {
+  padding: 40px 0 70px 0;
+}
+
+.other__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.other-wrapper__hotel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.other__info {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.other-info {
+  max-height: 500px;
+}
+
+.other-info:nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+.other-info__main-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.other-info__image {
+  position: relative;
+}
+
+.other-info__img {
+  width: 100%;
+  height: 100%;
+}
+
+.other-info__offer {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 12px 7px 11px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.other-info__hotel {
+  padding: 46px 21px 25px 43px;
+  background-color: #0A223D;
+  color: #ffffff;
+}
+
+.other-info__stars {
+  margin-bottom: 6px;
+}
+
+.other-info__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 27px;
+}
+
+.other-info__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 50px;
+}
+
+.other-info__reference {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.other-info__map {
+  display: flex;
+  align-items: center;
+}
+
+.other-info__icon {
+  height: 14px;
+  width: 14px;
+  margin-right: 14px;
+}
+
+.other-info__purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.other-info__hotel-small-card {
+  padding: 30px 21px 25px 32px;
+  margin-top: -4px;
+}
+
+.other-info__price {
+  display: grid;
+  row-gap: 5px;
+}
+
+.other-info__old-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+}
+
+.other-info__pricetag {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.other-info__button {
+  width: 120px;
+  height: 40px;
+}
+
+.room__wrapper {
+  margin-bottom: 28px;
+}
+
 @media (max-width: 1920px) {
   .container {
     max-width: 1320px;
@@ -1094,6 +1239,18 @@ template {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .other-info {
+    max-height: 450px;
+  }
+  .other-info__title {
+    margin-bottom: 11px;
+  }
+  .other-info__hotel {
+    padding: 30px 21px 25px 43px;
+  }
+  .other-info__text {
+    margin-bottom: 25px;
   }
   .card {
     width: 230px;
@@ -1168,6 +1325,32 @@ template {
   }
   .stars-container {
     margin-left: 1px;
+  }
+  .other {
+    padding: 20px 0 70px 0;
+  }
+  .other__title {
+    margin-bottom: 55px;
+  }
+  .other-wrapper__hotel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+  .other-info {
+    max-height: 450px;
+  }
+  .other-info:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+  .other-info__hotel {
+    padding: 15px 25px 10px 25px;
+  }
+  .other-info__stars {
+    margin-bottom: 15px;
+  }
+  .other-info__text {
+    margin-bottom: 40px;
   }
   .booking {
     width: 340px;
@@ -1299,6 +1482,76 @@ template {
     margin-top: 0;
     margin-left: 2px;
     padding: 3px 8px 4px 9px;
+  }
+  .other {
+    padding: 10px 0 70px 0;
+  }
+  .other__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  .other-info {
+    max-width: 92%;
+    display: grid;
+    margin: auto;
+    grid-template-rows: 230px 230px;
+  }
+  .other-info__offer {
+    font-size: 10px;
+    padding: 6px 8px 6px 8px;
+  }
+  .other-info__main-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .other-info__stars {
+    display: none;
+  }
+  .other-info__text {
+    display: none;
+  }
+  .other-info:nth-child(1) {
+    grid-column: 1;
+  }
+  .other-info__image {
+    max-width: 288px;
+  }
+  .other-info__price {
+    margin-bottom: 6px;
+  }
+  .other-info__reference {
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 1px;
+  }
+  .other-info__purchase {
+    flex-direction: column;
+  }
+  .other-info__title {
+    margin-bottom: 11px;
+    font-size: 16px;
+    margin-bottom: 11px;
+  }
+  .other-info__hotel {
+    padding: 8px 10px 5px 15px;
+  }
+  .other-info__old-price {
+    font-size: 12px;
+  }
+  .other-info__pricetag {
+    font-size: 22px;
+  }
+  .other-info__button {
+    width: 100%;
+    height: 35px;
+  }
+  .other-wrapper__hotel {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  .room__wrapper {
+    margin-bottom: 14px;
   }
   .booking {
     width: 100%;
